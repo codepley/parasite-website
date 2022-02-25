@@ -1,0 +1,159 @@
+body {
+    /* background-color: bisque; */
+    background-image: url("/bg.jpg");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 50%;
+    border: 0px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.para {
+    border: 0px solid black;
+    width: 70%;
+    margin: 10px 0;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: teal;
+    color: white;
+    padding: 10px;
+}
+
+.para > button {
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: lightcoral;
+}
+
+.para > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.newParaBtn {
+    margin: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: blueviolet;
+}
+
+.newParaBtn > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* New Para Page */
+
+.titleInput {
+    margin: 0 5px;
+    padding: 15px;
+    width: 40%;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.textInput {
+    margin: 10px 0;
+    padding: 15px;
+    line-height: 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.addBtn {
+    border: none;
+    padding: 15px;
+    width: 70px;
+    border-radius: 100px;
+    background-color: lightcoral;
+    cursor: pointer;
+    color: white;
+}
+
+.backToHomeBtn {
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.backToHomeBtn > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* view page */
+
+.deleteBtn {
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: tomato;
+    color: white;
+}
+
+.editBtn {
+    margin-top: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: teal;
+    color: white;
+}
+
+.editBtn > a {
+    text-decoration: none;
+    color: white;
+}
+
+.viewPageContent {
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0 25px;
+    color: #666;
+}
+
+.viewPageContent::first-letter{
+    font-size: 30px;
+}
+
+.saveBtn {
+    border: none;
+    padding: 15px;
+    width: 70px;
+    border-radius: 100px;
+    background-color: teal;
+    cursor: pointer;
+    color: white;
+}
+
+.desc {
+    color: #666;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+      <div class="container">
+        <h1>Para-Site</h1>
+        <small class="desc"><strong><i>Website to write your interesting paragraphs with full CRUD operations.</i></strong></small>
+        <button class="newParaBtn"><a href="/new">Add New Para</a></button>
+    
+        <% for(let p of posts) { %>
+        <div class="para">
+          <h3 style="border-bottom: 1px solid white;"><i><%= p.title %></i></h3>
+          <p>
+            <%= p.content.slice(0, 100) %>... 
+          </p>
+          <button><a href="/view/<%= p.id %>">Read More</a></button>
+        </div>
+        <% } %>
+      </div>
+    
+  </body>
+</html>

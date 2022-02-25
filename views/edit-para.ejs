@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Para</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <style>
+      .container {
+        width: 50%;
+        border: 0px solid black;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    </style> -->
+  </head>
+  <body>
+      <div class="container">
+        <h1>Edit Your Para</h1>
+        <form method="post" action="/view/<%=foundPara._id%>?_method=PUT">
+        <label for="title">Title</label>
+        <input
+            class="titleInput"
+            value="<%= foundPara.title %> "
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Your New Para Title"
+        />
+        <br />
+        <br />
+        <label for="content">Write Your Para</label>
+        <br />
+        <textarea class="textInput" name="content" id="content" cols="50" rows="20"><%= foundPara.content %> </textarea>
+        <br />
+        <br />
+        <button class="saveBtn">Save</button>
+        </form>
+        <hr />
+        <button class="backToHomeBtn"><a href="/">Back to Home</a></button>
+        <hr />
+      </div>
+  </body>
+</html>

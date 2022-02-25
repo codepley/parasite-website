@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Para</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <style>
+      .container {
+        width: 50%;
+        border: 0px solid black;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    h4 {
+      line-height: 30px;
+      font-size: 20px;
+      padding: 0 25px;
+    }
+    </style> -->
+  </head>
+  <body>
+      <div class="container">
+        <h1><%= foundPara.title %></h1>
+        <form method="post" action="/view/<%= foundPara.id%>/?_method=DELETE">
+          <button class="deleteBtn">Delete this Para</button>
+        </form>
+        <button class="editBtn"><a href="/<%= foundPara.id%>/edit">Edit this Para</a></button>
+        <h4 class="viewPageContent"><%= foundPara.content %></h4>
+        <button class="backToHomeBtn"><a href="/">Back to Home</a></button>
+      </div>
+  </body>
+</html>
